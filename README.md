@@ -35,3 +35,4 @@ Instructions: This is a helicopter
 7. Должен получиться HelicopterRF_little-bird.pbo 
 8. Размещаете pbo в любой свой мод с указанием ссылкой на источник https://github.com/moddayz
 
+Original model purchased here https://www.cgtrader.com/3d-models/aircraft/helicopter/mh-6-little-bird-soar-transport under Royalty Free License
