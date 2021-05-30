@@ -221,7 +221,7 @@ class CfgVehicles
 	class HeliRF_little_bird_base: HeliSIB_middle
 	{
 		scope=1;
-		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","CarBattery","RFlittle_bird_blade1","RFlittle_bird_blade2","RFlittle_bird_blade3","RFlittle_bird_blade4","RFlittle_bird_blade5","RFlittle_bird_bladem1","RFlittle_bird_bladem3"};
+		attachments[] = {"NivaWheel_1_1","NivaWheel_1_2","NivaWheel_2_1","NivaWheel_2_2","CarBattery","RFlittle_bird_blade1","RFlittle_bird_blade2","RFlittle_bird_blade3","RFlittle_bird_blade4","RFlittle_bird_blade5","RFlittle_bird_bladem1","RFlittle_bird_bladem3","Reflector_1_1","Reflector_2_1"};
 		model="\HelicopterRF_little-bird\little_bird.p3d";
 	
 
@@ -243,7 +243,7 @@ class CfgVehicles
 				name = "$STR_attachment_Body0";
 				description = "";
 				icon="cat_vehicle_body";
-				attachmentSlots[] = {};
+				attachmentSlots[] = {"Reflector_1_1","Reflector_2_1"};
 			};
 			class Engine
 			{
@@ -356,7 +356,21 @@ class CfgVehicles
 				};
 			};
 		};
-		
+		class AnimationSources:AnimationSources
+		{
+			class beam1
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+			class beam2
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.5;
+			};
+		};		
 		class Crew: Crew
 		{
 			class Driver

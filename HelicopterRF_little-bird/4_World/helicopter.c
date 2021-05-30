@@ -14,7 +14,9 @@ class HeliRF_little_bird_base extends HeliSIB_middle
 		c_warningSound = "HelicopterWarning_SoundSets_littlebird";
 		c_crashSound = "HelicopterCrash_SoundSets_littlebird";
 	}
-
+	HeliLightPanel_little_bird m_LightPanel_1_little_bird;	
+	HeliLight_little_bird m_Light_1_little_bird;
+	bool HeliEnableLight=false;
 
 	ref array<string>  m_little_blade = {"RFlittle_bird_blade1","RFlittle_bird_blade2","RFlittle_bird_blade3","RFlittle_bird_blade4","RFlittle_bird_blade5","RFlittle_bird_bladem1","RFlittle_bird_bladem3"};
 	ref array<string>  m_little_blade1 = {"RFlittle_bird_blade1","RFlittle_bird_blade2","RFlittle_bird_blade3","RFlittle_bird_blade4","RFlittle_bird_blade5"};	
@@ -60,7 +62,9 @@ class HeliRF_little_bird_base extends HeliSIB_middle
 			GetInventory().CreateInInventory( "RFlittle_bird_blade4" );	
 			GetInventory().CreateInInventory( "RFlittle_bird_blade5" );	
 			GetInventory().CreateInInventory( "RFlittle_bird_bladem1" );
-			GetInventory().CreateInInventory( "RFlittle_bird_bladem3" );						
+			GetInventory().CreateInInventory( "RFlittle_bird_bladem3" );
+			GetInventory().CreateInInventory( "HeadlightH7" );			
+			GetInventory().CreateInInventory( "HeadlightH7" );	
 			return;
 		}
 
@@ -206,7 +210,41 @@ class HeliRF_little_bird_base extends HeliSIB_middle
 		
 		return "";
 	}
+	void SimulateLight(float dt)
+	{
+		float beam1 = GetAnimationPhase("beam1");
+		if(beam1 == 1)
+		{
+			if(m_LightPanel_1_little_bird == NULL)
+			{
+				m_LightPanel_1_little_bird = HeliLightPanel_little_bird.Cast( ScriptedLightBase.CreateLight( HeliLightPanel_little_bird, "0 0 0") );
+				m_LightPanel_1_little_bird.AttachOnMemoryPoint(this, "beamStart10","beamEnd10");
+			}
 
+		}else{
+			if (m_LightPanel_1_little_bird)m_LightPanel_1_little_bird.FadeOut();
+		}
+		
+		float beam2 = GetAnimationPhase("beam2");
+		if(beam2 == 1)
+		{
+			if(m_Light_1_little_bird == NULL)
+			{
+				m_Light_1_little_bird = HeliLight_little_bird.Cast( ScriptedLightBase.CreateLight( HeliLight_little_bird, "0 0 0") );
+				m_Light_1_little_bird.AttachOnMemoryPoint(this, "beamStart2","beamEnd2");
+			}
+		}else{
+			if (m_Light_1_little_bird)m_Light_1_little_bird.FadeOut();
+		}
+	}
+	override void SoundAnim_Simulate(float dt)
+	{
+		if ( GetGame().IsClient()  && m_enable)
+		{
+			SimulateLight(dt);
+		}
+		super.SoundAnim_Simulate(dt);
+	}
 
 	override bool CanDisplayAttachmentCategory( string category_name )
 	{
