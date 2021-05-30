@@ -7,9 +7,9 @@
 Поскольку это производная работа от SIBNIC, те же правила применяются к этому моду. Вы можете упаковать его в свою мастерскую, если предоставите ссылку на источник https://github.com/moddayz  
 Если в описании мода нет ссылки на мой github, вы запрещаете переупаковывать мой мод или хотите продать мой мод, я сочту это нарушением и отправлю DMCA.
 
-We have Discord, for those who need help, they can ask in the chat. We also publish news and plans there. https://discord.gg/fC2nPqhg9b To access alpha versions, we have a website https://sibnic.info
+SIBNIC has a Discord, for those who need help, they can ask in the chat. They also publish news and plans there. https://discord.gg/fC2nPqhg9b To access alpha versions, they have a website https://sibnic.info
 
-У нас есть Discord, для тех, кому нужна помощь, они могут спросить в чате. Так же публикуем там новости и планы. https://discord.gg/fC2nPqhg9b Для доступа к альфа версиям у нас есть сайт https://sibnic.info
+В SIBNIC есть Discord, для тех, кому нужна помощь, они могут спросить в чате. Там же публикуют новости и планы. https://discord.gg/fC2nPqhg9b Для доступа к альфа-версиям у них есть веб-сайт https://sibnic.info
 
 Instructions: This is a helicopter
 
