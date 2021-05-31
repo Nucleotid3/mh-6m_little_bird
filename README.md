@@ -1,19 +1,6 @@
 # mh-6m_little_bird
  MH-6M Little Bird Helicopter for DayZ
 
-Class Names:
-Helilittle_bird_RF_clear
-Helilittle_bird_RF
-
-RFlittle_bird_blade1
-RFlittle_bird_blade2
-RFlittle_bird_blade3
-RFlittle_bird_blade4
-RFlittle_bird_blade5
-RFlittle_bird_bladem1
-RFlittle_bird_bladem3
-
-
 This is a free helicopter mod for DayZ standalone that I created based on a purchased model but based heavily on work and components from SIBNIC. As this is derivative work of SIBNIC, the same rules apply to this mod. You can pack it to your workshop, provided that you provide a link to the source https://github.com/moddayz If the mod description does not include a link to my github, you forbid repackaging my mod or want to sell my mod, I will consider this a violation and will submit the DMCA.
 
 Это бесплатный мод на вертолет для автономной версии DayZ, который я создал на основе купленной модели, но в значительной степени основан на работе и компонентах от SIBNIC. 
@@ -49,3 +36,15 @@ Instructions: This is a helicopter
 8. Размещаете pbo в любой свой мод с указанием ссылкой на источник https://github.com/moddayz
 
 Original model purchased here https://www.cgtrader.com/3d-models/aircraft/helicopter/mh-6-little-bird-soar-transport under Royalty Free License
+
+
+**Class Names:**
+* Helilittle_bird_RF_clear
+* Helilittle_bird_RF
+* RFlittle_bird_blade1
+* RFlittle_bird_blade2
+* RFlittle_bird_blade3
+* RFlittle_bird_blade4
+* RFlittle_bird_blade5
+* RFlittle_bird_bladem1
+* RFlittle_bird_bladem3
