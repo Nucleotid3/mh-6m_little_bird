@@ -403,34 +403,7 @@ class CfgVehicles
 				getInPos = "pos_cargo2";
 				getInDir = "pos_cargo2_dir";
 			};		
-			class Cargo3
-			{
-				actionSel = "seat_cargo3";
-				proxyPos = "crewcargo3";
-				getInPos = "pos_cargo3";
-				getInDir = "pos_cargo3_dir";
-			};
-			class Cargo4
-			{
-				actionSel = "seat_cargo4";
-				proxyPos = "crewcargo4";
-				getInPos = "pos_cargo4";
-				getInDir = "pos_cargo4_dir";
-			};	
-			class Cargo5
-			{
-				actionSel = "seat_cargo5";
-				proxyPos = "crewcargo5";
-				getInPos = "pos_cargo5";
-				getInDir = "pos_cargo5_dir";
-			};
-			class Cargo6
-			{
-				actionSel = "seat_cargo6";
-				proxyPos = "crewcargo6";
-				getInPos = "pos_cargo6";
-				getInDir = "pos_cargo6_dir";
-			};				
+			
 		};
 	};
 	class Helilittle_bird_RF_clear: HeliRF_little_bird_base
